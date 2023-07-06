@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../pages/contact/bindings.dart';
+import '../../pages/frame/welcome/bindings.dart';
 import '../../pages/contact/view.dart';
 import '../../pages/frame/profile/bindings.dart';
 import '../../pages/frame/profile/view.dart';

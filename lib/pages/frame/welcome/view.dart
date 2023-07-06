@@ -1,7 +1,11 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:kittycav/common/values/colors.dart';
+import 'package:kittycav/pages/frame/welcome/controller.dart';
 
-class WelcomePage extends StatelessWidget {
+class WelcomePage extends GetView<WelcomeController> {
   const WelcomePage({Key? key}) : super(key: key);
 
   Widget _buildPageHeadTitle(String title){
@@ -9,8 +13,10 @@ class WelcomePage extends StatelessWidget {
       child: Text(
         title,
         style: const TextStyle(
-          //color: AppColors.primaryElementText,
-
+          color: AppColors.primaryElementText,
+          fontFamily: "Montserrat",
+          fontWeight: FontWeight.bold,
+          fontSize: 45
         ),
       ),
     );
@@ -18,6 +24,10 @@ class WelcomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: _buildPageHeadTitle(controller, title),
+      ),
+    );
   }
 }
