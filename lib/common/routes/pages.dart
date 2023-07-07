@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../pages/frame/welcome/bindings.dart';
-import '../../pages/contact/view.dart';
+import '../../pages/frame/welcome/view.dart';
 import '../../pages/frame/profile/bindings.dart';
 import '../../pages/frame/profile/view.dart';
 import '../../pages/frame/sign_in/bindings.dart';
