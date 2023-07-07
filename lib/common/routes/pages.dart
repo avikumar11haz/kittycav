@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 
 
 import '../../pages/frame/welcome/index.dart';
+import '../../pages/frame/sign_in/index.dart';
+
 import '../../pages/message/index.dart';
 import 'routes.dart';
 
@@ -20,6 +22,14 @@ class AppPages {
       binding: WelcomeBinding(),
     ),
 
+
+    //signIn Page
+    GetPage(
+      name: AppRoutes.SIGN_IN,
+      page: () => const SignInPage(),
+      binding: SignInBinding(),
+    ),
+
     //Message Page
     GetPage(
       name: AppRoutes.Message,
@@ -30,14 +40,7 @@ class AppPages {
       ],
     ),
 
- /*
-    GetPage(
-      name: AppRoutes.SIGN_IN,
-      page: () => const SignInPage(),
-      binding: SignInBinding(),
-    ),
-
-
+/*
     // GetPage(
     //   name: AppRoutes.Application,
     //   page: () => ApplicationPage(),
