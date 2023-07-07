@@ -1,23 +1,10 @@
 import 'package:flutter/material.dart';
-
+import 'package:kittycav/common/middlewares/middlewares.dart';
 import 'package:get/get.dart';
 
-import '../../pages/frame/welcome/bindings.dart';
-import '../../pages/frame/welcome/view.dart';
-import '../../pages/frame/profile/bindings.dart';
-import '../../pages/frame/profile/view.dart';
-import '../../pages/frame/sign_in/bindings.dart';
-import '../../pages/frame/sign_in/view.dart';
+
 import '../../pages/frame/welcome/index.dart';
-import '../../pages/messages/bindings.dart';
-import '../../pages/messages/chat/bindings.dart';
-import '../../pages/messages/chat/view.dart';
-import '../../pages/messages/videocall/bindings.dart';
-import '../../pages/messages/videocall/view.dart';
-import '../../pages/messages/view.dart';
-import '../../pages/messages/voicecall/bindings.dart';
-import '../../pages/messages/voicecall/view.dart';
-import '../middlewares/router_auth.dart';
+import '../../pages/message/index.dart';
 import 'routes.dart';
 
 class AppPages {
@@ -32,12 +19,24 @@ class AppPages {
       page: () => const WelcomePage(),
       binding: WelcomeBinding(),
     ),
+
+    //Message Page
+    GetPage(
+      name: AppRoutes.Message,
+      page: () => const MessagePage(),
+      binding: MessageBinding(),
+      middlewares: [
+        RouteAuthMiddleware(priority: 1),
+      ],
+    ),
+
+ /*
     GetPage(
       name: AppRoutes.SIGN_IN,
       page: () => const SignInPage(),
       binding: SignInBinding(),
     ),
-/*
+
 
     // GetPage(
     //   name: AppRoutes.Application,
@@ -59,16 +58,10 @@ class AppPages {
         name: AppRoutes.Contact,
         page: () => ContactPage(),
         binding: ContactBinding()),
+*/
 
-    //Message Page
-    GetPage(
-      name: AppRoutes.Message,
-      page: () => const MessagePage(),
-      binding: MessageBinding(),
-      middlewares: [
-        RouteAuthMiddleware(priority: 1),
-      ],
-    ),
+
+ /*
     //Profile section
     GetPage(
         name: AppRoutes.Profile,
@@ -87,5 +80,7 @@ class AppPages {
         name: AppRoutes.VideoCall,
         page: () => VideoCallPage(),
         binding: VideoCallBinding()),
+
+  */
   ];
 }
