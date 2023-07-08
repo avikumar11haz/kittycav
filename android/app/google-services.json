@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "13654712910",
+    "project_id": "kitty-cav",
+    "storage_bucket": "kitty-cav.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13654712910:android:1a55bfe2ae98c9d02c991f",
+        "android_client_info": {
+          "package_name": "com.moonlight.kittycav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13654712910-eh3rtr9h3l01tsg6lbj4n2djfn0tq2rq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moonlight.kittycav",
+            "certificate_hash": "32d15fdde6e07f149b215c6cfdd26f819072ecc5"
+          }
+        },
+        {
+          "client_id": "13654712910-vepm5lr8mjs02a9hdkilptmjr3nudu04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJsA_SodBXFCOKwNXMTwvMY6UNz_-Lxbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13654712910-vepm5lr8mjs02a9hdkilptmjr3nudu04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
