@@ -9,11 +9,10 @@ import '../values/storage.dart';
 class UserStore extends GetxController {
   static UserStore get to => Get.find();
 
-  // 是否登录
   final _isLogin = false.obs;
   // login token //this is our access token and sent down for authorization
   String token = '';
-  // 用户 profile
+
   final _profile = UserItem().obs;
 
   bool get isLogin => _isLogin.value;
@@ -32,7 +31,7 @@ class UserStore extends GetxController {
     }
   }
 
-  // 保存 token
+  // saving token
   Future<void> setToken(String value) async {
     await StorageService.to.setString(STORAGE_USER_TOKEN_KEY, value);
     token = value;
