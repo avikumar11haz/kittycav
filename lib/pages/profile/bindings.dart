@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:kittycav/pages/frame/welcome/controller.dart';
+import 'package:kittycav/pages/profile/controller.dart';
 
-class WelcomeBinding implements Bindings{
+class ProfileBinding implements Bindings{
   @override
   void dependencies() {
     // TODO: implement dependencies
-    Get.lazyPut<WelcomeController>(() => WelcomeController());
+    Get.lazyPut<ProfileController>(() => ProfileController());
   }
 }

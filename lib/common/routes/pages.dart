@@ -7,6 +7,7 @@ import '../../pages/frame/welcome/index.dart';
 import '../../pages/frame/sign_in/index.dart';
 
 import '../../pages/message/index.dart';
+import '../../pages/profile/index.dart';
 import 'routes.dart';
 
 class AppPages {
@@ -64,13 +65,16 @@ class AppPages {
 */
 
 
- /*
+
     //Profile section
     GetPage(
         name: AppRoutes.Profile,
-        page: () => ProfilePage(),
-        binding: ProfileBinding()),
-    /
+        page: () => const ProfilePage(),
+        binding: ProfileBinding()
+    ),
+    /*
+
+
     GetPage(
         name: AppRoutes.Chat, page: () => ChatPage(), binding: ChatBinding()),
     /*

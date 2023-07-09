@@ -1,17 +1,19 @@
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:kittycav/common/routes/names.dart';
-import 'package:kittycav/pages/frame/welcome/state.dart';
+import 'package:kittycav/common/store/store.dart';
+import 'package:kittycav/pages/profile/index.dart';
 
-class WelcomeController extends GetxController{
-  WelcomeController();
-  final title = "kittycav .";
-  final state = WelcomeState();
+class ProfileController extends GetxController{
+  ProfileController();
+  //final title = "kittycav .";
+  final state = ProfileState();
 
-  @override
-  void onReady() {
-    // TODO: implement onReady
-    super.onReady();
-    Future.delayed(
-        const Duration(seconds: 3), ()=> Get.offAllNamed(AppRoutes.Message));
+
+
+  Future<void> goLogout() async {
+    await GoogleSignIn().signOut();
+    await UserStore.to.onLogout();
   }
+
 }

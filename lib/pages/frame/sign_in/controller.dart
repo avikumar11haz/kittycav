@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:kittycav/common/entities/entities.dart';
+import 'package:kittycav/common/routes/names.dart';
+import 'package:kittycav/common/store/store.dart';
 import 'package:kittycav/pages/frame/sign_in/state.dart';
 
 
@@ -49,8 +51,9 @@ class SignInController extends GetxController{
     }
   }
 
-  asyncPostAllData(){
-
+  asyncPostAllData() async{
+    print("...lets go to message page...");
+    Get.offAllNamed(AppRoutes.Message);
   }
 
 }

@@ -8,8 +8,10 @@ class AppColors {
   static const Color primarySecondaryBackground =
   Color.fromARGB(255, 247, 247, 249);
 
+  //primary color
   static const Color primaryElement = Color.fromARGB(255, 74, 123, 246);
 
+  //primary black color
   static const Color primaryText = Color.fromARGB(255, 32, 47, 62);
   static const Color primary_bg = Color.fromARGB(210, 32, 47, 62);
 
